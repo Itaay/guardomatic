@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Guardomatic</title>
+</head>
+
+<body>
+    <h1>Guardomatic</h1>
+    <h2>Automatically create assignments for guard posts</h2>
+    <div id='info'>
+        <div id='menu'>
+            <div class='menuItem' id='assignmentsButton'>Assignments</div>
+            <div class='menuItem' id='guardsButton'>Guards</div>
+            <div class='menuItem' id='exemptionsButton'>Exemptions</div>
+            <div class='menuItem' id='postsButton'>Posts</div>
+        </div>
+        <div id='assignmentsInfo' class='dataPage'>
+            <div id='optimizationDiv'>
+            <button id='optimizeButton'>Optimize</button>
+            </div>
+            <div id='toolbar'>
+                <select id='role-roleName'></select>
+                <select id='task-guardName'></select>
+                <button id='taskAdditionButton' class='addButton toolbarButton'>Add task</button>
+                <button id='roleAdditionButton' class='addButton toolbarButton'>Add role</button>
+                <input type='time' id='startTimeSelect'>
+                <input type='time' id='stopTimeSelect'>
+                <button id='taskDeleteButton' class='deleteButton toolbarButton'>Delete task</button>
+                <button id='roleDeleteButton' class='deleteButton toolbarButton'>Delete role</button>
+
+            </div>
+            <div id='assignments'>
+                <table id='assignmentsTable'>
+                </table>
+            </div>
+        </div>
+        <div id='guardsInfo' class='dataPage'></div>
+        <div id='exemptionsInfo' class='dataPage'></div>
+        <div id='postsInfo' class='dataPage'></div>
+    </div>
+</body>
+<script src='utils.js'></script>
+<script src='losses.js'></script>
+<script src='optimizer.js'></script>
+<script src='models/task.js'></script>
+<script src='models/role.js'></script>
+<script src='models/tasksTable.js'></script>
+<script src='controls/optionsList.js'></script>
+<script src='view/toolbar.js'></script>
+<script src='view/optionsAdder.js'></script>
+<script src='view/optionsDisplay.js'></script>
+<script src='view/menu.js'></script>
+<script src='view/tasksTableDisplay.js'></script>
+<script src='bootstrap/handlers.js'></script>
+<script src='bootstrap/startup.js'></script>
+<script src='bootstrap/mock.js'></script>
+</html>

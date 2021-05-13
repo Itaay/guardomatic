@@ -1,0 +1,159 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#info{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #d5d9e7;
+    color: #0a0a0a;
+}
+
+#menu{
+    width: 100%;
+    height: fit-content;
+    background-color: #c1c4d1;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    overflow-x: auto;
+    background-color: #b3b3bf;
+}
+
+.menuItem{
+    margin-top: 5px;
+    padding: 3px;
+    background-color: #9096ac;
+    border-style: solid;
+    border-color: #808392;
+    border-radius: 3px;
+    border-width: 1px;
+    margin-right: 20px;
+}
+
+.menuItem:hover{
+    background-color: #a2a9c0;
+    border-color: #9096ac;
+}
+
+.dataPage{
+    height: fit-content;
+    width: 100% - 2px;
+    background-color: #e4e7f8;
+    border-color: #c1c4d1;
+    border-style:solid;
+    border-width:0px;
+}
+
+#guardsInfo{
+    display: none;
+}
+
+#exemptionsInfo{
+    display: none;
+}
+
+#postsInfo{
+    display: none;
+}
+
+#toolbar{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background-color:  #d7daf0;
+    padding: 6px;
+}
+
+#toolbar *{
+    margin-right: 3px;
+}
+.toolbarButton{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.optionsDisplayButton{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.DeleteButton{
+    background-color: #f91111;
+    border-style:solid;
+    border-radius: 5px;
+    border-width:1px;
+    border-color: black;
+    font-weight: 600;
+}
+
+.addButton{
+    background-color: #11f911;
+    border-style:solid;
+    border-radius: 5px;
+    border-width:1px;
+    border-color:black;
+    font-weight: 600;
+}
+
+.addButton:hover{
+    background-color: #60ff60;
+}
+
+.DeleteButton:hover{
+    background-color: #ff6060;
+}
+
+#optimizationDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#assignmentsTable{
+    border-spacing: 0px;
+    color: #0a0a0a;
+}
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td:hover{
+    background-color: #d2d9f0;
+}
+
+.focusedItem{
+    background-color: #a2a9c0;
+}
+
+.selectedMenuItem{
+    background-color: #6e7383;
+}
+
+.focusedItem:hover{
+    background-color: #aeb3c3;
+}
+
+.displayedOption{
+    flex-direction: row;
+}
+
+.displayedOptionItem{
+    display: inline;
+}
+
+#optimizeButton{
+    padding: 10px;
+    margin: 5px 0 5px 0;
+}
+
+.optionsAdder{
+    background-color: #a5a9b7;
+    padding: 5px;
+}
